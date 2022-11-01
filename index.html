@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>CLICK GAME</title>
+</head>
+
+<body>
+    <center>
+        <textarea name="" id="auto1" cols="30" rows="3"></textarea>
+        <textarea name="" id="auto2" cols="30" rows="3"></textarea>
+        <textarea name="" id="auto3" cols="30" rows="3"></textarea>
+    </center>
+    <button id="start_game" onclick="startGame()">START</button>
+    <h1 id="timer">0</h1>
+    <center>
+        <div class="difficult">
+            <label for="easy">EASY</label><input type="radio" id="easy" name="diff">
+            <label for="medium">MEDIUM</label><input type="radio" id="medium" name="diff">
+            <label for="hard">HARD</label><input type="radio" id="hard" name="diff">
+            <label for="expert">EXPERT</label><input type="radio" id="expert" name="diff">
+        </div>
+        <br><br>
+        <div class="box" id="1" onclick="first()"></div>
+        <div class="box" id="2" onclick="second()"></div>
+        <div class="box" id="3" onclick="third()"></div>
+        <div class="box" id="4" onclick="fourth()"></div>
+        <div class="box" id="5" onclick="fifth()"></div>
+        <div class="box" id="6" onclick="sixth()"></div>
+        <div class="box" id="7" onclick="seventh()"></div>
+        <div class="box" id="8" onclick="eighth()"></div>
+        <div class="box" id="9" onclick="ninth()"></div>
+        <div class="box" id="10" onclick="tenth()"></div>
+        <div class="box" id="11" onclick="eleventh()"></div>
+        <div class="box" id="12" onclick="tewelth()"></div>
+        <div class="box" id="13" onclick="thirteenth()"></div>
+        <div class="box" id="14" onclick="fourteenth()"></div>
+        <div class="box" id="15" onclick="fifteenth()"></div>
+        <div class="box" id="16" onclick="sixteenth()"></div>
+
+        <div id="gameover">
+            <h1 id="message">GAME OVER</h1>
+            <p id="yourscore">YOUR SCORE : </p><i id="score"></i>
+            <button onclick="playAgain()" id="playagain">PLAY AGAIN !!!</button>
+        </div>
+    </center>
+</body>
+<script src="app.js"></script>
+
+</html>
